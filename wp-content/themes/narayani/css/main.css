@@ -1,0 +1,589 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+      
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  th {
+      color:#fff;
+      background: var(--wp--preset--color--gypurple);
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+    color: var(--wp--preset--color--primary);
+    text-decoration: none;
+  }
+  a:hover {color: var(--wp--preset--color--secondary);}
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  @media (max-width:782px) {
+    .hide-m{display: none;}
+  }
+  footer{background-color:var(--wp--preset--color--contrast);color:var(--wp--preset--color--white);margin: 0;}.width-ninety{max-width: 90%;margin: 0 auto;}.wp-block-navigation__responsive-container, .wp-block-navigation__responsive-container-content{font-weight: bold}
+  .wp-site-blocks main{margin-top: 0;}.n-top {position: relative; margin-top: -132px;z-index: 999;}.home-form{display: grid;grid-template-columns: 1fr 1fr;column-gap: 20px;}
+  .tick {list-style-type: '✔  ';}.b-rad{border-radius: 12px;overflow: hidden;}.top-h{position: relative;top: 0;transition: top ease 0.5s;}.top-h:hover{top: -10px;}
+.nav-call, .nav-call a {
+    background: var(--wp--preset--color--primary);
+    color: #fff;
+    padding: 8px 16px !important;
+    border-radius: 4px;
+}
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-top {
+    animation: fade-top 1.2s ease-in;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1.2s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1.2s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1.2s ease-in;
+  }
+  @keyframes fade-top {
+    0% {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-280px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(280px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    word-wrap: normal !important;
+  }
+  
+  .wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+	  color:#fff;
+    padding: 0.2em 1em;
+    border: 2px solid #00a0d2; /* Blue */
+  }
+  
+  .wpcf7 form.init .wpcf7-response-output,
+  .wpcf7 form.resetting .wpcf7-response-output,
+  .wpcf7 form.submitting .wpcf7-response-output {
+    display: none;
+  }
+  
+  .wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450; /* Green */
+  }
+  
+  .wpcf7 form.failed .wpcf7-response-output,
+  .wpcf7 form.aborted .wpcf7-response-output {
+    border-color: #dc3232; /* Red */
+  }
+  
+  .wpcf7 form.spam .wpcf7-response-output {
+    border-color: #f56e28; /* Orange */
+  }
+  
+  .wpcf7 form.invalid .wpcf7-response-output,
+  .wpcf7 form.unaccepted .wpcf7-response-output,
+  .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #ffb900; /* Yellow */
+  }
+  
+  .wpcf7-form-control-wrap {
+    position: relative;
+  }
+  
+  .wpcf7-not-valid-tip {
+    color: #dc3232; /* Red */
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+  }
+  
+  .use-floating-validation-tip .wpcf7-not-valid-tip {
+    position: relative;
+    top: -2ex;
+    left: 1em;
+    z-index: 100;
+    border: 1px solid #dc3232;
+    background: #fff;
+    padding: .2em .8em;
+    width: 24em;
+  }
+  
+  .wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 1em;
+  }
+  
+  .wpcf7-list-item-label::before,
+  .wpcf7-list-item-label::after {
+    content: " ";
+  }
+  
+  .wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d; /* Dark Gray 800 */
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+  }
+  
+  form.submitting .wpcf7-spinner {
+    visibility: visible;
+  }
+  
+  .wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc; /* Light Gray 100 */
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .wpcf7-spinner::before {
+      animation-name: blink;
+      animation-duration: 2000ms;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .wpcf7 input[type="file"] {
+    cursor: pointer;
+  }
+  
+  .wpcf7 input[type="file"]:disabled {
+    cursor: default;
+  }
+  
+  .wpcf7 .wpcf7-submit:disabled {
+    cursor: not-allowed;
+  }
+  
+  .wpcf7 input[type="url"],
+  .wpcf7 input[type="email"],
+  .wpcf7 input[type="tel"] {
+    direction: ltr;
+  }
+  
+  .wpcf7-reflection > output {
+    display: list-item;
+    list-style: none;
+  }
+  
+  .wpcf7-reflection > output[hidden] {
+    display: none;
+  }
+
+  .wpcf7-form input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], select, textarea {width:90% !important;padding: 12px;border-radius: 8px;}
+  .wpcf7-submit {width:100%;background: var(--wp--preset--color--primary);color: #fff; padding: 12px;border-radius: 8px;}.wpcf7-submit:hover{color: var(--wp--preset--color--primary);background: #fff;cursor: grab;}
